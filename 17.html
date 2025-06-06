@@ -1,0 +1,89 @@
+<!-- thursday 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoverable Sidenav Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .sidenav {
+      height: 100vh;
+      width: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidenav a {
+      height: 50px;
+      width: 50px;
+      margin: 10px 0;
+      display: block;
+      background-color: #555;
+      border-radius: 4px;
+      transition: width 0.3s, background-color 0.3s;
+      overflow: hidden;
+      white-space: nowrap;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+    }
+
+    .sidenav a span {
+      display: none;
+      margin-left: 10px;
+    }
+
+    .sidenav a:hover {
+      width: 180px;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .sidenav a:hover span {
+      display: inline-block;
+    }
+
+    .green { background-color: #4CAF50; }
+    .blue  { background-color: #2196F3; }
+    .red   { background-color: #f44336; }
+    .gray  { background-color: #555; }
+
+    .main {
+      margin-left: 70px;
+      padding: 20px;
+    }
+
+    .main h2 {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="#" class="green"><span>Home</span></a>
+    <a href="#" class="blue"><span>About</span></a>
+    <a href="#" class="red"><span>Services</span></a>
+    <a href="#" class="gray"><span>Contact</span></a>
+  </div>
+
+  <div class="main">
+    <h2>Hoverable Sidenav Buttons</h2>
+    <p>Hover over the buttons in the left side navigation to open them.</p>
+  </div>
+
+</body>
+</html>
